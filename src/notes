@@ -1,0 +1,39 @@
+add to inventory.py
+
+weapons = ["axe", "sword", "spear"]
+
+#debugging purpose
+#print(weapons)
+
+inventory = []
+
+def weapon_choice():
+    print("These are your available weapons:")
+    for i in range(len(weapons)):
+        time.sleep(.5)
+        print(f"{i}. {weapons[i]}")
+    choice = int(input("What weapon do you want? "))
+    inventory.append(weapons[choice])
+
+weapon_choice()
+
+inputLevel = int(input("Enter your Level: "))
+levelup = max_level // inputLevel
+newLevel = levelup
+print(newLevel)
+
+health = 100
+damageRng = randint(0, 100)
+damageDealt = health - damageRng
+def attackMonster():
+    print("You have 2 choices: ")
+    time.sleep(x)
+    print("1. Attack")
+    time.sleep(x)
+    print("2. Leave it alone")
+    choice = input("-> ")
+
+    if choice == "1":
+        print("You did:", damageRng, "damage")
+        time.sleep(x)
+        print(damageDealt)
