@@ -1,5 +1,5 @@
 import time
-import weapon_select
+from story import weapon_select as ws
 from story import ironforge_story
 
 def player_location():
@@ -23,12 +23,10 @@ def player_location():
     elif choice == "2":
         print("Your chosen location is a peaceful town,",
                 "all people are nice here.")
-        weapon_select.weapon_choice()
 
     elif choice == "3":
         print("Your chosen location is a rough and violent village,",
                 "well known for monster attacks, so they're very defensive.")
-        weapon_select.weapon_choice()
 
     else:
         print("chose a location listed!!!")
