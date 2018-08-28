@@ -1,5 +1,4 @@
 import time
-from story import weapon_select as ws
 from story import ironforge_story
 
 def player_location():
